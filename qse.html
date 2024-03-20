@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QSE?</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+ 
+<body>
+    <header>
+     <div class="header-content">
+        <h1 class="logoS">QUEM SOU EU?</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Filme.html">Filmes</a></li>
+                <li><a href="Livros.html">Livros</a></li>
+                <li><a href="Musica.html">Música</a></li>
+            </ul>
+        </nav>
+     </div>
+    </header>
+  
+    <main>
+        <p class="dados">   Me chamo Amanda, tenho 17 anos e gosto muito de conhecer novas cafeterias e fazer bons 
+            amigos. Moro em Nova Petrópolis, mesmo sendo uma cidade de pessoas mais idosas (KKKKKK) gosto do 
+            seu charme. Nunca imaginei que estaria aqui no IF hoje, fazendo TI! 
+            Os meus hobbies sao: 
+            -ler (principalmente  livros de romance agua com açucar )
+            - amo maratonar uma boa serie policial 
+            - gosto muito de correr
+            - fazer doces (amo!)
+        </p>
+
+       
+    </main>
+   
+    <script>
+        function typeWriter(elemento) {
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = '';
+          textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 30 * i);
+          });
+        }
+      
+        const titulo = document.querySelector('p');
+        typeWriter(titulo);
+    </script>
+    
+</body>
+</html>
